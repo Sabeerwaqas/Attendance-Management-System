@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F9FBFC;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dark-theme-background{
+    background-color: #070B0F;
+}
+
+.dark-theme-component{
+    background-color: #46484E;
+}
+
+.signup-parent{
+    background-color: #E1F4F3;
+    width: 50vw;
+    height: 50vh;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.headings{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.input{
+    width: 40vw;
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 8px;
+    
+}
+
+.email{
+    width: 40vw;
+    border: none;
+    padding: 1%;
+    background-color: #F9FBFC;
+}
+
+.password{
+    width: 40vw;
+    border: none;
+    padding: 1%;
+    background-color: #F9FBFC;
+}
+
+.signup-btn{
+    width: 40.8vw;
+    padding: 1%;
+    margin-top: 5%;
+    background-color: #BDE4F4;
+    font-weight: bold;
+    border: none;
+}
