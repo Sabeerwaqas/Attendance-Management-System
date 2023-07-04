@@ -7,12 +7,37 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.change-theme-btn{
+    background-color: #070B0F;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    
+}
+
+.theme-btn-parent{
+    width: 10vw;
+    margin-top: 1%;
+    margin-left: 45%;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 10px 5px lightgray;
+    border: none;
+}
+
 .dark-theme-background{
     background-color: #070B0F;
+    
 }
 
 .dark-theme-component{
     background-color: #46484E;
+    width: 50vw;
+    height: 50vh;
+    margin: 0 auto;
+    margin-top: 8%;
+    color: white;
+    box-shadow: 1px 1px 20px 10px lightgray;
 }
 
 .signup-parent{
@@ -20,7 +45,7 @@ body{
     width: 50vw;
     height: 50vh;
     margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 8%;
 }
 
 .headings{
