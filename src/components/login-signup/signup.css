@@ -41,7 +41,7 @@ body{
 }
 
 .signup-parent{
-    background-color: #E1F4F3;
+    background-color: #008080;
     width: 50vw;
     height: 50vh;
     margin: 0 auto;
@@ -51,7 +51,24 @@ body{
 .headings{
     display: flex;
     justify-content: space-evenly;
+
 }
+
+.background-change{
+    background-color: white;
+}
+
+.link-parent{
+    margin-top: 5%;
+    font-size: 1.5em;
+}
+
+.link-child{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 
 .input{
     width: 40vw;

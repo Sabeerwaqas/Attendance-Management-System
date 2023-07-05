@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./signup.css";
 
-const Signup = () => {
+const Login = () => {
   const [theme, setTheme] = useState(false);
 
   const handleDark = () => {
@@ -12,10 +12,6 @@ const Signup = () => {
       setTheme("");
     }
   };
-
-  const [click, setClick] = useState(false);
-
-  
 
   return (
     <>
@@ -50,7 +46,7 @@ const Signup = () => {
                 type="password"
                 placeholder="Enter Password Here..."
               />
-              <button className="signup-btn">SignUp</button>
+              <button className="signup-btn">LogIn</button>
             </div>
           </form>
         </div>
@@ -59,4 +55,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Login;
