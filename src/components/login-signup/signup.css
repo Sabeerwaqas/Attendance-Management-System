@@ -5,6 +5,9 @@ body{
     background-color: #F9FBFC;
     font-family: 'EB Garamond', serif;
     font-family: 'Roboto', sans-serif;
+    background-image: url(../../images/backgroundImage.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .change-theme-btn{
@@ -38,14 +41,16 @@ body{
     margin-top: 8%;
     color: white;
     box-shadow: 1px 1px 20px 10px lightgray;
+    opacity: 0.7;
 }
 
 .signup-parent{
-    background-color: #008080;
+    background-color: navy;
     width: 50vw;
     height: 50vh;
     margin: 0 auto;
     margin-top: 8%;
+    opacity: 0.7;
 }
 
 .headings{

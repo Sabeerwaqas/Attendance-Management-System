@@ -4,7 +4,6 @@ import "./signup.css";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../Firebase/firebase";
 
-
 const Signup = () => {
   const [theme, setTheme] = useState(false);
 
@@ -16,30 +15,29 @@ const Signup = () => {
     }
   };
 
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
-
     e.preventDefault();
 
     createUserWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
-    // Signed in 
-    const user = userCredential.user;
-    // ...
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    // ..
-  });
+      .then((userCredential) => {
+        // Signed in
+        const user = userCredential.user;
+        // ...
 
+       
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // ..
+      });
 
-  }
-
+    
   
+  };
 
   return (
     <>
@@ -66,7 +64,7 @@ const Signup = () => {
                 className="email"
                 type="email"
                 placeholder="Enter Email Here..."
-                onChange={e => setEmail(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className="input input-password">
@@ -74,9 +72,11 @@ const Signup = () => {
                 className="password"
                 type="password"
                 placeholder="Enter Password Here..."
-                onChange={e => setPassword(e.target.value)}
+                onChange={(e) => setPassword(e.target.value)}
               />
-              <button type="submit" className="signup-btn">SignUp</button>
+              <button type="submit" className="signup-btn">
+                SignUp
+              </button>
             </div>
           </form>
         </div>

@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./signup.css";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../Firebase/firebase";
+
 
 const Login = () => {
   const [theme, setTheme] = useState(false);
@@ -12,6 +15,32 @@ const Login = () => {
       setTheme("");
     }
   };
+
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = (e) => {
+
+    e.preventDefault();
+
+    signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    console.log(user)
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // ..
+  });
+
+
+  }
+
+  
 
   return (
     <>
@@ -32,12 +61,13 @@ const Login = () => {
           </span>
         </div>
         <div>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="input input-email">
               <input
                 className="email"
                 type="email"
                 placeholder="Enter Email Here..."
+                onChange={e => setEmail(e.target.value)}
               />
             </div>
             <div className="input input-password">
@@ -45,8 +75,9 @@ const Login = () => {
                 className="password"
                 type="password"
                 placeholder="Enter Password Here..."
+                onChange={e => setPassword(e.target.value)}
               />
-              <button className="signup-btn">LogIn</button>
+              <button type="submit" className="signup-btn">LogIn</button>
             </div>
           </form>
         </div>
