@@ -23,3 +23,12 @@ body{
     padding: 2%;
 }
 
+.signup-heading{
+    text-align: center;
+    position: relative;
+    top: 5%;
+    font-size: 1.5rem;
+    /* margin-top: 10%; */
+
+}
+
