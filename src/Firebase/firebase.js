@@ -1,13 +1,13 @@
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA_hx4mDw0iGF-wXJlX-lIDJgKJNawOxtI",
-  authDomain: "attendance-system-bbd1b.firebaseapp.com",
-  projectId: "attendance-system-bbd1b",
-  storageBucket: "attendance-system-bbd1b.appspot.com",
-  messagingSenderId: "700543438617",
-  appId: "1:700543438617:web:0dc643375e0668b2d3bf88"
+  apiKey: "AIzaSyBb2I_0gALtREUyfWjUZXzfaWkdJVyb2L8",
+  authDomain: "amsr-1488d.firebaseapp.com",
+  projectId: "amsr-1488d",
+  storageBucket: "amsr-1488d.appspot.com",
+  messagingSenderId: "14880866",
+  appId: "1:14880866:web:293cd9b7647522dafe013b"
 };
 
 
